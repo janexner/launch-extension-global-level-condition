@@ -1,11 +1,12 @@
 {
-  "displayName": "Global Level Condition",
-  "name": "global-level-condition",
+  "displayName": "Global Level Conditions",
+  "name": "ags055-global-level-conditions",
   "platform": "web",
   "version": "1.0.0",
-  "description": "Provides a Condition that checks arbitrary levels",
+  "description": "Provides Conditions that checks arbitrary levels",
   "author": {
-    "name": "Adobe Consulting - Jan Exner"
+    "name": "Adobe Consulting - Jan Exner",
+    "email": "jexner@adobe.com"
   },
   "viewBasePath": "src/view/",
   "iconPath": "resources/icons/logo.svg",
@@ -44,6 +45,25 @@
       },
       "libPath": "src/lib/conditions/aboveLevelN.js",
       "viewPath": "conditions/aboveLevelN.html"
+    },
+    {
+      "displayName": "Equals Level N",
+      "name": "equals-level-n",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "level"
+        ],
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevelN.js",
+      "viewPath": "conditions/equalsLevelN.html"
     },
     {
       "displayName": "Below Level N",
