@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(settings) {
-  var targetLevel = turbine.getExtensionSEttings().level;
+  var targetLevel = turbine.getExtensionSettings().level;
   if (targetLevel > 3) {
     return true;
   }
