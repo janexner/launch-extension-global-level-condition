@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Extension Configuration</title>
+  </head>
+  <body>
+    <section>
+      <label>
+        <span>Level to test</span>
+        <input type="text" id="level" />
+        <button id="btnLevelDataElement">Use Data Element</button>
+      </label>
+    </section>
+
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+      window.extensionBridge.register({
+        init: function(info) {
+          if (info.settings) {
+            document.querySelector('#level').value = info.settings.level;
+          }
+        },
+
+        getSettings: function() {
+          return {
+            'level': document.querySelector('#level').value || ''
+          }
+        },
+
+        validate: function() {
+          var fldLevel = document.querySelector('level');
+          if ('undefined' === fldLevel.value || !fldLevel.value) {
+            fldLevel.invalid = true;
+          }
+          return !fldLevel.invalid;
+        }
+      });
+    </script>
+    <script>
+      var btnLevelDataElement = document.querySelector('#btnLevelDataElement');
+      btnLevelDataElement.addEventListener('click', function(event) {
+        window.extensionBridge.openDataElementSelector().then(function(dataElement) {
+          document.querySelector('#level').value = dataElement;
+        });
+      }, false);
+    </script>
+  </body>
+</html>

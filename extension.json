@@ -1,0 +1,178 @@
+{
+  "displayName": "Global Level Condition",
+  "name": "global-level-condition",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "Provides a Condition that checks arbitrary levels",
+  "author": {
+    "name": "Adobe Consulting - Jan Exner"
+  },
+  "viewBasePath": "src/view/",
+  "iconPath": "resources/icons/logo.svg",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "level"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "conditions": [
+    {
+      "displayName": "Above Level N",
+      "name": "above-level-n",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "level"
+        ],
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevelN.js",
+      "viewPath": "conditions/aboveLevelN.html"
+    },
+    {
+      "displayName": "Below Level N",
+      "name": "below-level-n",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "level"
+        ],
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevelN.js",
+      "viewPath": "conditions/belowLevelN.html"
+    },
+    {
+      "displayName": "Above Level 1",
+      "name": "above-level-1",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevel1.js"
+    },
+    {
+      "displayName": "Above Level 2",
+      "name": "above-level-2",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevel2.js"
+    },
+    {
+      "displayName": "Above Level 3",
+      "name": "above-level-3",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevel3.js"
+    },
+    {
+      "displayName": "Above Level 4",
+      "name": "above-level-4",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevel4.js"
+    },
+    {
+      "displayName": "Above Level 5",
+      "name": "above-level-5",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/aboveLevel5.js"
+    },
+    {
+      "displayName": "Below Level 1",
+      "name": "below-level-1",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevel1.js"
+    },
+    {
+      "displayName": "Below Level 2",
+      "name": "below-level-2",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevel2.js"
+    },
+    {
+      "displayName": "Below Level 3",
+      "name": "below-level-3",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevel3.js"
+    },
+    {
+      "displayName": "Below Level 4",
+      "name": "below-level-4",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevel4.js"
+    },
+    {
+      "displayName": "Below Level 5",
+      "name": "below-level-5",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/belowLevel5.js"
+    }
+  ]
+}
