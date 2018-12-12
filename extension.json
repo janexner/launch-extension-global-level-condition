@@ -2,7 +2,7 @@
   "displayName": "Global Level Conditions",
   "name": "ags055-global-level-conditions",
   "platform": "web",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provides Conditions that checks arbitrary levels",
   "author": {
     "name": "Adobe Consulting - Jan Exner",
@@ -138,6 +138,61 @@
         "additionalProperties": false
       },
       "libPath": "src/lib/conditions/aboveLevel5.js"
+    },
+    {
+      "displayName": "Equals Level 1",
+      "name": "equals-level-1",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevel1.js"
+    },
+    {
+      "displayName": "Equals Level 2",
+      "name": "equals-level-2",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevel2.js"
+    },
+    {
+      "displayName": "Equals Level 3",
+      "name": "equals-level-3",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevel3.js"
+    },
+    {
+      "displayName": "Equals Level 4",
+      "name": "equals-level-4",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevel4.js"
+    },
+    {
+      "displayName": "Equals Level 5",
+      "name": "equals-level-5",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/conditions/equalsLevel5.js"
     },
     {
       "displayName": "Below Level 1",
